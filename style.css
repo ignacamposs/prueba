@@ -1,0 +1,81 @@
+/* Importamos una fuente moderna de Google Fonts (opcional pero recomendada) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Fondo negro puro estilo OLED */
+    color: white;
+    font-family: 'Inter', sans-serif; /* Fuente tipo Apple */
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #888; /* Gris suave para que no compita con el número */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+/* EL PROTAGONISTA: El número gigante */
+#count-el {
+    font-size: 8rem; /* ¡ENORME! */
+    font-weight: 800;
+    margin: 20px 0;
+    color: #bdff00;
+}
+
+/* Contenedor para los botones (para que queden uno al lado del otro) */
+.btn-container {
+    display: block;
+    text-align: center;
+}
+
+button {
+    margin: 10px 0;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px; /* Bordes totalmente redondos (estilo cápsula) */
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+    
+}
+
+
+/* Botón Principal (Incrementar) */
+#increment-btn {
+    background-color: #38bdf8; /* Azul eléctrico moderno */
+    color: #000; /* Texto negro para contraste */
+}
+
+/* Botón Secundario (Guardar) */
+#save-btn {
+    background-color: #333; /* Gris oscuro sutil */
+    color: #fff;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* El historial abajo */
+#save-el {
+    margin: 10px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+#total-el {
+    font-size: 1.5rem;   /* Un poco más grande que el texto normal */
+    font-weight: bold;
+    color: #bdff00;      /* Ese verde neón que te gustó en la imagen */
+    margin-top: 15px;    /* Espacio para que respire */
+    text-transform: uppercase;
+}
